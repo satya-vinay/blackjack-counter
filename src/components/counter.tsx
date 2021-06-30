@@ -1,7 +1,7 @@
 import { FormControl, FormHelperText, FormLabel, HStack, Input, Radio, RadioGroup } from "@chakra-ui/react"
 import { Component } from "react"
 
-function Sample(){
+function Counter(){
     return (
         <FormControl as="fieldset" className="." background="#F7F1EA">
   <FormLabel as="legend">Favorite  Card suit</FormLabel>
@@ -18,4 +18,4 @@ function Sample(){
     )
 }
 
-export default Sample
+export default Counter
