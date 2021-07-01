@@ -1,20 +1,21 @@
-import { FormControl, FormHelperText, FormLabel, HStack, Input, Radio, RadioGroup } from "@chakra-ui/react"
-import { Component } from "react"
+import { Button, ButtonGroup, Flex, Spacer, VStack } from "@chakra-ui/react"
 
 function Counter(){
     return (
-        <FormControl as="fieldset" className="." background="#F7F1EA">
-  <FormLabel as="legend">Favorite  Card suit</FormLabel>
-  <RadioGroup defaultValue="Itachi">
-    <HStack spacing="24px">
-      <Radio value="Clubs">Clubs</Radio>
-      <Radio value="Diamonds">Diamonds</Radio>
-      <Radio value="Hearts">Hearts</Radio>
-      <Radio value="Spades">Spades</Radio>
-    </HStack>
-  </RadioGroup>
-  <FormHelperText>Select only if you play blackjack.</FormHelperText>
-</FormControl>
+      <VStack >
+        <Flex p={4}>
+        <Button p={3} colorScheme="red" mr="4">New Count</Button>
+        <Spacer />
+      <Button p={3} colorScheme="green" mr="4">Start Count</Button>
+      <Spacer />
+      <Button p={3} colorScheme="blue" mr="4">True Count</Button>
+      <Spacer />
+      <Button p={3} colorScheme="teal" mr="4">Pause Count</Button>
+        </Flex>
+
+      </VStack>
+      
+
     )
 }
 
