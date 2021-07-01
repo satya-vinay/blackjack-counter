@@ -4,21 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ChakraProvider} from "@chakra-ui/react"
 
-// theme.js
-export default {
-  colors: {
-    transparent: "transparent",
-    black: "#000",
-    white: "#fff",
-    gray: {
-      50: "#f7fafc",
-      // ...
-      900: "#171923",
-    },
-    // ...
-  },
-}
-
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>

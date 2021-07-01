@@ -1,4 +1,4 @@
-import { Flex, Heading, VStack,IconButton,Image, Container,Box,useColorMode, } from '@chakra-ui/react';
+import { Heading, VStack,IconButton,Image, Container,Box } from '@chakra-ui/react';
 import { SettingsIcon } from '@chakra-ui/icons'
 import React from 'react';
 import Sample from './components/sample';
