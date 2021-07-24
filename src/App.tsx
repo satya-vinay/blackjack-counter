@@ -1,9 +1,27 @@
 import React from 'react';
 import Homepage from './components/homepage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Counter from './components/counter';
 
 
-function App() {
-  return <Homepage/>
+
+export default function App() {
+  return (
+    <Router>
+
+        <Switch>
+          <Route exact path="/">
+            <Homepage />
+          </Route>
+          <Route path="/blackjack-counter">
+            <Counter />
+          </Route>
+        </Switch>
+    </Router>
+  );
 }
 
-export default App;
