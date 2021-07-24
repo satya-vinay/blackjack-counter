@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Counter from './components/counter';
+import Footer from './components/footer';
 
 
 
@@ -16,6 +17,7 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             <Homepage />
+            <Footer/>
           </Route>
           <Route path="/blackjack-counter">
             <Counter />
